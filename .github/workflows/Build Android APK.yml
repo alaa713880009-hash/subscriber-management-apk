@@ -21,8 +21,17 @@ jobs:
         distribution: 'temurin'
         cache: gradle
 
-    - name: Grant execute permission for gradlew
-      run: chmod +x gradlew
+    - name: Ensure gradlew exists (generate if missing)
+      run: |
+        if [ ! -f "./gradlew" ]; then
+          echo "gradlew not found — generating wrapper using Gradle distribution"
+          GRADLE_VERSION=7.6
+          curl -fsSL "https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip" -o gradle.zip
+          unzip -q gradle.zip -d gradle-dist
+          ./gradle-dist/gradle-${GRADLE_VERSION}/bin/gradle wrapper --gradle-version ${GRADLE_VERSION}
+        fi
+        git update-index --chmod=+x gradlew || true
+        chmod +x ./gradlew
 
     - name: Build with Gradle
       run: ./gradlew assembleDebug
