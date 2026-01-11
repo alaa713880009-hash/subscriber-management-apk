@@ -2,9 +2,9 @@ name: Build Android APK
 
 on:
   push:
-    branches: [ "main" ] # يمكنك تغيير اسم الفرع حسب حاجتك
+    branches: [ main, master, develop ] # يمكنك تغيير اسم الفرع حسب حاجتك
   pull_request:
-    branches: [ "main" ]
+    branches: [ main, master, develop]
 
 jobs:
   build:
