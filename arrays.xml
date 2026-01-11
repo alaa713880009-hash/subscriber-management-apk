@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="roles">
+        <item>مدير</item>
+        <item>مشغل</item>
+        <item>عارض</item>
+    </string-array>
+
+    <string-array name="payment_methods">
+        <item>نقد</item>
+        <item>شيك</item>
+        <item>تحويل بنكي</item>
+        <item>بطاقة ائتمان</item>
+    </string-array>
+
+    <string-array name="invoice_statuses">
+        <item>مدفوعة</item>
+        <item>غير مدفوعة</item>
+        <item>مدفوعة جزئياً</item>
+    </string-array>
+</resources>

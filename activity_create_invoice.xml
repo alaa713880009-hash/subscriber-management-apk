@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="إنشاء فاتورة جديدة"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_color"
+        android:layout_marginBottom="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- اختيار المشترك -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="اختر المشترك"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:layout_marginBottom="8dp" />
+
+            <Spinner
+                android:id="@+id/subscriber_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp" />
+
+            <!-- معلومات التعرفة -->
+            <TextView
+                android:id="@+id/tariff_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="التعرفة: 0.00"
+                android:textSize="14sp"
+                android:textColor="@color/primary_color"
+                android:layout_marginBottom="16dp" />
+
+            <!-- الفترة -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <EditText
+                    android:id="@+id/period_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="الفترة (مثال: يناير 2024)"
+                    android:inputType="text"
+                    android:padding="12dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- القراءة السابقة -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <EditText
+                    android:id="@+id/previous_reading_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="القراءة السابقة"
+                    android:inputType="numberDecimal"
+                    android:padding="12dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- القراءة الحالية -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <EditText
+                    android:id="@+id/current_reading_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="القراءة الحالية"
+                    android:inputType="numberDecimal"
+                    android:padding="12dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- الاستهلاك والمبلغ -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/consumption_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="الاستهلاك: 0"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_primary"
+                    android:padding="12dp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/amount_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="المبلغ: 0.00"
+                    android:textSize="14sp"
+                    android:textColor="@color/success_color"
+                    android:textStyle="bold"
+                    android:padding="12dp"
+                    android:background="@color/white"
+                    android:layout_marginStart="8dp" />
+
+            </LinearLayout>
+
+            <!-- تاريخ الاستحقاق -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <EditText
+                    android:id="@+id/due_date_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="تاريخ الاستحقاق (dd/MM/yyyy)"
+                    android:inputType="date"
+                    android:padding="12dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- خيار إرسال الرسالة -->
+            <CheckBox
+                android:id="@+id/send_message_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="إرسال رسالة للمشترك"
+                android:textColor="@color/text_primary"
+                android:layout_marginBottom="16dp" />
+
+            <!-- زر الحساب -->
+            <Button
+                android:id="@+id/calculate_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="حساب"
+                android:padding="12dp"
+                android:background="@color/secondary_color"
+                android:textColor="@color/white"
+                android:layout_marginBottom="8dp" />
+
+            <!-- زر الإنشاء -->
+            <Button
+                android:id="@+id/create_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="إنشاء فاتورة"
+                android:padding="12dp"
+                android:background="@color/success_color"
+                android:textColor="@color/white"
+                android:layout_marginBottom="8dp" />
+
+            <!-- زر إنشاء فواتير متعددة -->
+            <Button
+                android:id="@+id/select_multiple_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="إنشاء فواتير لمشتركين متعددين"
+                android:padding="12dp"
+                android:background="@color/primary_color"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

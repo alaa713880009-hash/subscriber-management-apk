@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reports"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_color"
+        android:layout_marginBottom="32dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- كشوفات الحسابات -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="كشوفات الحسابات"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_color"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/account_statement_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/account_statement"
+                android:padding="12dp"
+                android:background="@color/primary_color"
+                android:textColor="@color/white"
+                android:layout_marginBottom="32dp" />
+
+            <!-- التصدير -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="التصدير"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_color"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/export_pdf_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/export_pdf"
+                android:padding="12dp"
+                android:background="@color/secondary_color"
+                android:textColor="@color/white"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/export_excel_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/export_excel"
+                android:padding="12dp"
+                android:background="@color/secondary_color"
+                android:textColor="@color/white"
+                android:layout_marginBottom="32dp" />
+
+            <!-- النسخ الاحتياطي -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/backup"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_color"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/backup_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="إنشاء نسخة احتياطية"
+                android:padding="12dp"
+                android:background="@color/success_color"
+                android:textColor="@color/white"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/restore_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/restore"
+                android:padding="12dp"
+                android:background="@color/success_color"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

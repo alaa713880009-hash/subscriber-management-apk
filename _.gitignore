@@ -1,0 +1,61 @@
+# Gradle files
+.gradle/
+build/
+*.apk
+*.ap_
+*.aab
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Log/OS Files
+*.log
+
+# Android Studio generated files and folders
+.idea/
+.classpath
+.c9/
+*.class
+*.dex
+*.ear
+*.iml
+*.jar
+*.rar
+*.war
+*.zip
+*.tar.gz
+*.rar
+.DS_Store
+.project
+.settings
+.classpath
+
+# Android Profiling
+*.trace
+
+# Keystore files
+*.jks
+*.keystore
+
+# Google Services (e.g. APIs or Firebase)
+google-services.json
+
+# Freeline
+freeline.py
+freeline/
+freeline_files/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/readme.md
+
+# Version control
+.git/
+.gitignore
+
+# OS
+Thumbs.db
+.DS_Store

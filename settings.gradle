@@ -1,0 +1,14 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolution {
+    eachArtifact {
+        goOffline false
+    }
+}
+rootProject.name = "SubscriberManagement"
+include ':app'

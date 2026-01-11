@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">نظام إدارة المشتركين</string>
+    
+    <!-- تسجيل الدخول -->
+    <string name="login">تسجيل الدخول</string>
+    <string name="username">اسم المستخدم</string>
+    <string name="password">كلمة المرور</string>
+    <string name="remember_me">تذكرني</string>
+    <string name="forgot_password">هل نسيت كلمة المرور؟</string>
+    <string name="login_error">خطأ في بيانات الدخول</string>
+    <string name="logout">تسجيل الخروج</string>
+    
+    <!-- القائمة الرئيسية -->
+    <string name="subscribers">المشتركون</string>
+    <string name="invoices">الفواتير</string>
+    <string name="payments">المدفوعات</string>
+    <string name="messages">الرسائل</string>
+    <string name="reports">التقارير</string>
+    <string name="settings">الإعدادات</string>
+    <string name="users">المستخدمون</string>
+    
+    <!-- المشتركون -->
+    <string name="add_subscriber">إضافة مشترك</string>
+    <string name="edit_subscriber">تعديل المشترك</string>
+    <string name="delete_subscriber">حذف المشترك</string>
+    <string name="subscriber_name">اسم المشترك</string>
+    <string name="subscriber_phone">رقم الهاتف</string>
+    <string name="subscriber_address">العنوان</string>
+    <string name="meter_number">رقم العداد</string>
+    <string name="tariff">التعرفة</string>
+    <string name="total_amount">الإجمالي</string>
+    <string name="paid_amount">المدفوع</string>
+    <string name="remaining_amount">المتبقي</string>
+    
+    <!-- الفواتير -->
+    <string name="add_invoice">إضافة فاتورة</string>
+    <string name="edit_invoice">تعديل الفاتورة</string>
+    <string name="delete_invoice">حذف الفاتورة</string>
+    <string name="invoice_period">الفترة</string>
+    <string name="previous_reading">القراءة السابقة</string>
+    <string name="current_reading">القراءة الحالية</string>
+    <string name="consumption">الاستهلاك</string>
+    <string name="amount">المبلغ</string>
+    <string name="due_date">تاريخ الاستحقاق</string>
+    <string name="issue_date">تاريخ الإصدار</string>
+    <string name="invoice_status">حالة الفاتورة</string>
+    <string name="paid">مدفوعة</string>
+    <string name="unpaid">غير مدفوعة</string>
+    <string name="partial">مدفوعة جزئياً</string>
+    
+    <!-- الرسائل -->
+    <string name="send_sms">إرسال رسالة نصية</string>
+    <string name="send_whatsapp">إرسال رسالة واتساب</string>
+    <string name="message_preview">معاينة الرسالة</string>
+    <string name="message_content">محتوى الرسالة</string>
+    <string name="send">إرسال</string>
+    <string name="cancel">إلغاء</string>
+    <string name="edit">تعديل</string>
+    <string name="delete">حذف</string>
+    <string name="select_recipients">اختر المستقبلين</string>
+    <string name="select_all">تحديد الكل</string>
+    <string name="deselect_all">إلغاء تحديد الكل</string>
+    
+    <!-- التقارير -->
+    <string name="account_statement">كشف الحساب</string>
+    <string name="export_pdf">تصدير PDF</string>
+    <string name="export_excel">تصدير Excel</string>
+    <string name="backup">نسخة احتياطية</string>
+    <string name="restore">استعادة</string>
+    <string name="backup_created">تم إنشاء النسخة الاحتياطية بنجاح</string>
+    <string name="restore_success">تمت استعادة البيانات بنجاح</string>
+    
+    <!-- المستخدمون -->
+    <string name="add_user">إضافة مستخدم</string>
+    <string name="edit_user">تعديل المستخدم</string>
+    <string name="delete_user">حذف المستخدم</string>
+    <string name="user_name">اسم المستخدم</string>
+    <string name="user_email">البريد الإلكتروني</string>
+    <string name="user_role">الدور</string>
+    <string name="admin">مدير</string>
+    <string name="operator">مشغل</string>
+    <string name="viewer">عارض</string>
+    <string name="permissions">الصلاحيات</string>
+    
+    <!-- الإعدادات -->
+    <string name="app_settings">إعدادات التطبيق</string>
+    <string name="language">اللغة</string>
+    <string name="theme">المظهر</string>
+    <string name="about">عن التطبيق</string>
+    <string name="version">الإصدار</string>
+    
+    <!-- الرسائل العامة -->
+    <string name="success">تم بنجاح</string>
+    <string name="error">خطأ</string>
+    <string name="confirm">تأكيد</string>
+    <string name="confirm_delete">هل أنت متأكد من الحذف؟</string>
+    <string name="loading">جاري التحميل...</string>
+    <string name="no_data">لا توجد بيانات</string>
+    <string name="search">بحث</string>
+    <string name="filter">تصفية</string>
+    <string name="save">حفظ</string>
+    <string name="close">إغلاق</string>
+    
+    <!-- بيانات المبرمج -->
+    <string name="developer_name">عبدالله المعمري</string>
+    <string name="developer_phone">782600010</string>
+    <string name="developed_by">تمت البرمجة بواسطة المبرمج %s\nالهاتف: %s</string>
+    <string name="app_version">1.0.0</string>
+    <string name="app_copyright">© 2024 جميع الحقوق محفوظة</string>
+</resources>
